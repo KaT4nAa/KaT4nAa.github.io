@@ -1,5 +1,5 @@
 // Liste des symboles à remplacer les chiffres
-const symbols = ['⏳', '⌛', '✦', '⏰', '⚡', '⚙', '♒', '⛓', '❖', '⟁'];
+const symbols = ['☰', '◎', '◔', '□'];
 
 // Liste des couleurs pour les glitchs
 const colors = ['#ff0033', '#ffcc00', '#00ccff', '#ff33cc', '#00ff99', '#ff6600'];
@@ -56,6 +56,27 @@ function startCountdown() {
         countdownElement.innerHTML = timeString;
     }, 100); // Mettre à jour toutes les 100ms pour un effet plus fluide
 }
+
+// Liste de phrases possibles pour le h1
+const phrases = [
+    "Stay tuned...",
+    "Something big is coming...",
+    "Prepare yourself...",
+    "The wait is almost over...",
+    "Get ready for an adventure...",
+    "The countdown begins...",
+    "Patience is key...",
+    "A surprise awaits you...",
+    "Welcome to the unknown...",
+    "Why are you here?",
+    "It's time to show who you really are..."
+];
+
+// Sélectionne une phrase au hasard
+const randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
+
+// Modifie le contenu de l'élément h1 avec la phrase choisie
+document.querySelector('h1').textContent = randomPhrase;
 
 // Démarrer le compte à rebours lorsque la page est chargée
 window.onload = startCountdown;

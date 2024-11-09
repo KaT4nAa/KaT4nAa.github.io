@@ -28,7 +28,7 @@ body {
 
 /* Le titre */
 h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 20px;
   letter-spacing: 5px;
   animation: glitch 1s infinite linear alternate-reverse;
@@ -36,7 +36,7 @@ h1 {
 
 /* Le compte à rebours */
 .countdown {
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: bold;
   display: inline-block;
   position: relative;
@@ -44,7 +44,7 @@ h1 {
 
 #time {
   display: inline-block;
-  font-size: 5rem;
+  font-size: 3rem;
   letter-spacing: 2px;
   animation: glitch 0.8s infinite linear alternate-reverse;
 }
